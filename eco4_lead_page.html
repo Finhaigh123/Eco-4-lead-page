@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECO 4 Lead Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #0052cc;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #0052cc;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            background: #0052cc;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #003a99;
+        }
+        form {
+            margin-top: 2rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            width: 100%;
+            background: #0052cc;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #003a99;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ECO 4 Energy Savings Program</h1>
+    </header>
+
+    <div class="container">
+        <h2>Save on Your Energy Bills with ECO 4</h2>
+        <p>The ECO 4 program offers energy efficiency grants to qualifying households. Improve your home's energy efficiency, reduce your carbon footprint, and save on energy costs.</p>
+
+        <h3>Check Your Eligibility</h3>
+        <p>Complete the form below to find out if you qualify for ECO 4 benefits.</p>
+
+        <form action="submit.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="postcode">Postcode</label>
+            <input type="text" id="postcode" name="postcode" placeholder="Enter your postcode" required>
+
+            <label for="benefits">Do you receive any of these benefits?</label>
+            <select id="benefits" name="benefits" required>
+                <option value="">Select an option</option>
+                <option value="universal-credit">Universal Credit</option>
+                <option value="pension-credit">Pension Credit</option>
+                <option value="child-benefit">Child Benefit</option>
+                <option value="income-support">Income Support</option>
+                <option value="none">None of the above</option>
+            </select>
+
+            <label for="message">Additional Comments</label>
+            <textarea id="message" name="message" rows="4" placeholder="Add any relevant details..."></textarea>
+
+            <button type="submit">Submit Your Application</button>
+        </form>
+
+        <p><strong>Contact Us:</strong><br>
+        Phone: 07774776203<br>
+        Email: <a href="mailto:eco4hometransformations@gmail.com">eco4hometransformations@gmail.com</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ECO 4 Lead Program | Designed for energy savings</p>
+    </footer>
+</body>
+</html>
